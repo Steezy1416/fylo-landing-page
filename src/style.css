@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --intro-bg-clr: hsl(217, 28%, 15%);
+  --main-bg-clr: hsl(218, 28%, 13%);
+  --footer-bg-clr: hsl(216, 53%, 9%);
+  --testimonial-bg-clr: hsl(219, 30%, 18%);
+
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --lightRed: hsl(0, 100%, 63%);
+  --white: hsl(0, 100%, 63%);
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --main-ff: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+  font-size: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap0_5 {
+  gap: 0.5rem;
+}
+
+.gap1 {
+  gap: 1rem;
+}
+
+.gap1_5 {
+  gap: 1.5rem;
+}
+
+.gap2 {
+  gap: 2rem;
+}
+
+.gap2_5 {
+  gap: 2.5rem;
+}
+
+.gap3 {
+  gap: 3rem;
+}
+
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+
+.fw-700 {
+  font-weight: var(--fw-700);
+}
