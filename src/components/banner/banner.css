@@ -43,6 +43,7 @@ h1 {
   position: relative;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .banner-content img {

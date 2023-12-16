@@ -1,0 +1,44 @@
+.icon-section {
+  background-color: var(--main-bg-clr);
+  color: var(--white);
+}
+
+.icon-section-content {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  justify-content: center;
+}
+
+.icon-section-content h2 {
+  font-size: 1rem;
+}
+
+.feature-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  max-width: 385px;
+}
+
+.feature-icon {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  object-fit: contain;
+  font-size: 0;
+}
+
+/* 700px */
+@media (min-width: 43.75rem) {
+  .icon-section {
+    padding: 5rem 0;
+  }
+}

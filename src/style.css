@@ -2,7 +2,7 @@
 
 :root {
   --intro-bg-clr: hsl(217, 28%, 15%);
-  --main-bg-clr: hsl(218, 28%, 13%);
+  --main-bg-clr: hsl(216, 30%, 13%);
   --footer-bg-clr: hsl(216, 53%, 9%);
   --testimonial-bg-clr: hsl(219, 30%, 18%);
 
@@ -148,13 +148,13 @@ h6 {
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-start {
-    text-align: start;
+  text-align: start;
 }
 
 .text-end {
-    text-align: end;
+  text-align: end;
 }
