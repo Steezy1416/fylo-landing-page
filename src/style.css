@@ -9,7 +9,7 @@
   --cyan: hsl(176, 68%, 64%);
   --blue: hsl(198, 60%, 50%);
   --lightRed: hsl(0, 100%, 63%);
-  --white: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
 
   --fw-400: 400;
   --fw-700: 700;
@@ -33,6 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100dvh;
   font-size: 1rem;
+  font-family: var(--main-ff);
 }
 
 img,
@@ -49,6 +50,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 p,
@@ -113,4 +118,43 @@ h6 {
 
 .fw-700 {
   font-weight: var(--fw-700);
+}
+
+.fs1 {
+  font-size: 1rem;
+}
+
+.fs1_1 {
+  font-size: 1.1rem;
+}
+
+.fs1_2 {
+  font-size: 1.2rem;
+}
+
+.fs1_5 {
+  font-size: 1.5rem;
+}
+
+.fs2 {
+  font-size: 2rem;
+}
+
+.fs2_5 {
+  font-size: 2.5rem;
+}
+.fs3 {
+  font-size: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
 }
