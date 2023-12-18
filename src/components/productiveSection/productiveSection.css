@@ -1,0 +1,51 @@
+.productive-section {
+  background-color: var(--main-bg-clr);
+  color: white;
+  padding: 5rem 0;
+}
+
+.productive-section-content {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1300px;
+}
+
+.productive-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--cyan);
+  border-bottom: 2px solid var(--cyan);
+  font-size: 0.8rem;
+}
+
+@media (min-width: 43.75rem) {
+  .productive-section-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .productive-section-content h2 {
+    font-size: 1.5rem;
+    width: 17ch;
+  }
+
+  .productive-btn {
+    font-size: 1rem;
+  }
+
+  .productive-text-container {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .productive-img {
+    flex: 1;
+    min-width: 0;
+  }
+}

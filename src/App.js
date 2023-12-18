@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import GetAccessSection from "./components/GetAccessSection";
 import Header from "./components/header/Header";
 import IconSection from "./components/iconSection/IconSection";
-import ProductiveSection from "./components/ProductiveSection";
+import ProductiveSection from "./components/productiveSection/ProductiveSection";
 import ReviewSection from "./components/ReviewSection";
 import "./style.css"
 
