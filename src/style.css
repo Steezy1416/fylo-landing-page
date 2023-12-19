@@ -166,3 +166,11 @@ h6 {
 .text-end {
   text-align: end;
 }
+
+nav li {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

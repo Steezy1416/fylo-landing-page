@@ -43,6 +43,14 @@ footer {
   gap: 1.5rem;
 }
 
+.footer-nav-columns nav ul li {
+  border-bottom: 1px solid transparent;
+}
+
+.footer-nav-columns nav ul li:hover {
+  border-bottom: 1px solid white;
+}
+
 .footer-icon-outer {
   padding: 0.5rem;
   border-radius: 50%;
@@ -57,7 +65,12 @@ footer {
   height: 1.2rem;
   aspect-ratio: 1;
   object-fit: contain;
-  fill: white;
+  fill: currentColor;
+}
+
+.footer-icon-outer:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
 }
 
 .footer-icon-row {

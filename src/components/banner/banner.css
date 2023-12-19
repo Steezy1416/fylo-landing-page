@@ -54,9 +54,15 @@ h1 {
   padding: 0.8rem 4rem;
   border-radius: 100rem;
   border: none;
-  background-color: var(--cyan);
+  background-size: auto 200%;
+  background-image: linear-gradient(var(--cyan) 51%, var(--blue) 100%);
   color: var(--white);
   font-size: 1rem;
+  transition: 200ms;
+}
+
+.banner-btn:hover {
+  background-position: bottom center;
 }
 
 /* 700px */

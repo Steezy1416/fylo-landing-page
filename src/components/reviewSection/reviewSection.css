@@ -26,6 +26,7 @@
   font-size: 0.725rem;
   padding: 1.8rem 1.5rem 1.5rem;
   max-width: 400px;
+  box-shadow: 7px 16px 51px -4px rgba(0, 0, 0, 0.1);
 }
 
 .review-card:first-child {

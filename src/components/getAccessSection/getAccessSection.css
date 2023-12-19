@@ -17,6 +17,7 @@
   text-align: center;
   font-size: 0.9rem;
   gap: 1rem;
+  box-shadow: 7px 16px 51px -4px rgba(0, 0, 0, 0.1);
 }
 
 .getAccessSection-content h2 {
@@ -37,12 +38,22 @@
   border-radius: 100rem;
 }
 
+.enter-email-btn:focus {
+  outline: none;
+}
+
 .get-started-btn {
-  background-color: var(--cyan);
+  background-size: auto 200%;
+  background-image: linear-gradient(var(--cyan) 51%, var(--blue) 100%);
   font-weight: var(--fw-700);
   color: var(--white);
   font-size: 0.8rem;
   text-align: center;
+  transition: 200ms;
+}
+
+.get-started-btn:hover {
+  background-position: bottom center;
 }
 
 /* 450px */

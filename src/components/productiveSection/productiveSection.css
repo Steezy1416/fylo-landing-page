@@ -20,6 +20,12 @@
   color: var(--cyan);
   border-bottom: 2px solid var(--cyan);
   font-size: 0.8rem;
+  transition: transform 300ms;
+}
+
+.productive-btn:hover {
+  transform: scale(1.05);
+  color: white;
 }
 
 @media (min-width: 43.75rem) {

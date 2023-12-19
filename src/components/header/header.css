@@ -22,6 +22,30 @@ header {
   gap: 1rem;
 }
 
+.nav-list-container li {
+  position: relative;
+  padding: 0.2rem 0;
+  transition: 300ms;
+}
+
+.nav-list-container li:hover {
+  color: var(--cyan);
+}
+
+.nav-list-container li::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  height: 2px;
+  background-color: white;
+  width: 0%;
+  transition: 300ms;
+}
+
+.nav-list-container li:hover:before {
+  width: 105%;
+}
+
 @media (min-width: 43.75rem) {
   header {
     height: calc(56px + 2.5rem);
