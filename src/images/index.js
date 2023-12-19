@@ -10,6 +10,10 @@ import securityIcon from "./icon-security.svg";
 import realTimeIcon from "./icon-collaboration.svg";
 import anyFileIcon from "./icon-any-file.svg";
 
+import phoneLogo from "./icon-phone.svg";
+import emailLogo from "./icon-email.svg";
+import locationLogo from "./icon-location.svg";
+
 export {
   bgQuotes,
   bannerImage,
@@ -22,4 +26,7 @@ export {
   securityIcon,
   realTimeIcon,
   anyFileIcon,
+  phoneLogo,
+  emailLogo,
+  locationLogo,
 };
