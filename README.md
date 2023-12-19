@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Fylo Dark Theme Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1496" alt="Screenshot 2023-12-19 at 3 54 36 PM" src="https://github.com/Steezy1416/produce-practice-pro/assets/105886307/33dec33f-5ff9-4b89-89f9-931a83a81aee">
 
-## Available Scripts
+The Fylo landing page is a web page that describes the company's service to secure your files. This project is based on the [fylo-dark-landing-page](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd) challenge from Frontend Mentor. The final solution can be accessed at [dark-fylo-landing-page](https://dark-fylo-landing-page.netlify.app).
 
-In the project directory, you can run:
+## Why did I do this challenge?
 
-### `npm start`
+I did this challenge because I wanted a chance to practice writing practical CSS, being able to seperate and organize my code so it's easier to manage, and just to have fun and see what challenges I face along the way so I can see what the gaps in my knowledge are.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- JSX
+- CSS
+- Netlify
 
-### `npm test`
+## Challenge I Faced
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+With this challenge things were actually going pretty smoothly until I tried to replicate this effect...
 
-### `npm run build`
+<img width="461" alt="Screenshot 2023-12-19 at 4 01 19 PM" src="https://github.com/Steezy1416/produce-practice-pro/assets/105886307/417d0856-305c-44f1-b424-18d49cdb1836">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+My initial thought was to do something like this
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```css
+.card {
+  position: relative;
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+/*quotes*/
+.card::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+```
 
-### `npm run eject`
+But that did not work so I tried putting a z-index of 1 on the ".card" and it still did not work. I even went around looking at my code to see if I accidently created a different stacking context but nothing and I was stuck on this for a while until eventually I did more research on stacking context and pseudo elements and came up with this solution.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```css
+.card-parent {
+  position: relative;
+  z-index: 1;
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+.card {
+  position: relative;
+  /*no z-index on the card at all*/
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+/*quotes*/
+.card::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This works because pseudo elements are considered children of their parent so in order to make the pseudo element be behind its parent you need a new stacking context for the parent. So you need to wrap the parent in a container and give that container a z-index but not the parent.
 
-## Learn More
+## Where can I view this page?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To view this page you can go to the [dark-fylo-landing-page](https://dark-fylo-landing-page.netlify.app) web page.
