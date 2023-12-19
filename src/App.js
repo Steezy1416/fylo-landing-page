@@ -1,11 +1,10 @@
 import Banner from "./components/banner/Banner";
 import Footer from "./components/Footer";
-import GetAccessSection from "./components/GetAccessSection";
 import Header from "./components/header/Header";
 import IconSection from "./components/iconSection/IconSection";
 import ProductiveSection from "./components/productiveSection/ProductiveSection";
 import ReviewSection from "./components/reviewSection/ReviewSection";
-import "./style.css"
+import "./style.css";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <IconSection />
         <ProductiveSection />
         <ReviewSection />
-        <GetAccessSection />
       </main>
       <Footer />
     </div>

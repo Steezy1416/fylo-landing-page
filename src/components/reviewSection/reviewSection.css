@@ -1,6 +1,10 @@
 .review-section {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 20rem;
   background-color: var(--main-bg-clr);
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  position: relative;
 }
 
 .review-section-content {
@@ -59,7 +63,7 @@
 /* 700px */
 @media (min-width: 43.75rem) {
   .review-section {
-    padding: 7rem 0;
+    padding: 4rem 0 15rem;
   }
 
   .review-card {

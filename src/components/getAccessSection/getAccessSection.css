@@ -1,0 +1,86 @@
+.getAccessSection {
+  padding: 0 1.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.getAccessSection-content {
+  max-width: 850px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--intro-bg-clr);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.getAccessSection-content h2 {
+  font-size: 1.2rem;
+}
+
+.access-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 650px;
+}
+
+.access-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 100rem;
+}
+
+.get-started-btn {
+  background-color: var(--cyan);
+  font-weight: var(--fw-700);
+  color: var(--white);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* 450px */
+@media (min-width: 28.125rem) {
+  .access-btn-container {
+    flex-direction: row;
+  }
+
+  .enter-email-btn {
+    flex: 1;
+  }
+
+  .get-started-btn {
+    flex: 1;
+  }
+}
+
+/* 705px */
+@media (min-width: 44.063rem) {
+  .enter-email-btn {
+    flex: 3;
+  }
+
+  .getAccessSection-content {
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .getAccessSection h2 {
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+
+  .getAccessSection p {
+    width: 78ch;
+  }
+
+  .access-btn-container {
+    gap: 1.5rem;
+  }
+}

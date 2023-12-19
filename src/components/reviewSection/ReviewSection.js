@@ -1,5 +1,6 @@
 import reviews from "../../reviewData";
-import "./reviewSection.css"
+import GetAccessSection from "../getAccessSection/GetAccessSection";
+import "./reviewSection.css";
 
 const ReviewSection = () => {
   return (
@@ -9,6 +10,7 @@ const ReviewSection = () => {
           return <Review key={review.name} reviewData={review} />;
         })}
       </div>
+      <GetAccessSection />
     </section>
   );
 };
@@ -30,4 +32,4 @@ const Review = ({ reviewData }) => {
   );
 };
 
-export default ReviewSection
+export default ReviewSection;
