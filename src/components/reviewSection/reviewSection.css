@@ -1,0 +1,82 @@
+.review-section {
+  padding: 4rem 0 8rem;
+  background-color: var(--main-bg-clr);
+}
+
+.review-section-content {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.review-card {
+  background-color: var(--testimonial-bg-clr);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.725rem;
+  padding: 1.8rem 1.5rem 1.5rem;
+  max-width: 400px;
+}
+
+.review-card:first-child {
+  position: relative;
+}
+
+.review-card:first-child:before {
+  content: "";
+  background-image: url("../../images/bg-quotes.png");
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 93%;
+  left: 2%;
+  z-index: -1;
+}
+
+.profile-picture {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  font-weight: var(--fw-700);
+}
+
+.reviewer-occupation {
+  font-size: 0.6rem;
+}
+
+/* 700px */
+@media (min-width: 43.75rem) {
+  .review-section {
+    padding: 7rem 0;
+  }
+
+  .review-card {
+    font-size: 1rem;
+  }
+
+  .review {
+    width: 36ch;
+  }
+
+  .reviewer-occupation {
+    font-size: 0.8rem;
+  }
+
+  .review-card:first-child:before {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: -2%;
+  }
+}
